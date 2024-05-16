@@ -1,6 +1,7 @@
 {
     "name": "zishu/myextend",
     "description": "我的扩展",
+    "version": "1.0.240516",
     "type": "library",
     "license": "MIT",
     "autoload": {
@@ -16,6 +17,6 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php":">=8.1"
+        "php":"^8.0"
     }
 }
