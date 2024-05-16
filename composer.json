@@ -1,0 +1,19 @@
+{
+    "name": "zishu/myextend",
+    "description": "我的扩展",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Zishu\\Myextend\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "zishu",
+            "email": "2018240448@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
