@@ -13,8 +13,8 @@ namespace Zishu\Myextend\main;
 **/
 class MyParams{
 
-    private $iv; //初始化向量 长度 16字节
-    private $key; //$encrypt_key  密钥长度 16字节
+    private $iv; //初始化向量 长度 16字节  如：GS56SGSsJ_myblog
+    private $key; //$encrypt_key  密钥长度 16字节 如：固定字符+time()  badmin1715913436
 
     /**
      * 构建
