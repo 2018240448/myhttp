@@ -11,7 +11,6 @@ namespace Zishu\Myextend\main;
  * 优点：1.不容易主动攻击,安全性好于ECB,适合传输长度长的报文,是SSL、IPSec的标准。
  * 缺点：1.不利于并行计算；2.误差传递；3.需要初始化向量IV
 **/
-
 class MyParams{
 
     private $iv; //初始化向量 长度 16字节  如：GS56SGSsJ_myblog
