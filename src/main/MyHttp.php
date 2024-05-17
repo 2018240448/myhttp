@@ -3,8 +3,9 @@ namespace Zishu\Myextend\main;
 
 /**
  * Http 请求类
+ * Curl
  */
-class MyCurl{
+class MyHttp{
 
     /**
      * 发送一个POST请求
