@@ -1,7 +1,6 @@
 {
     "name": "zishu/myextend",
     "description": "我的扩展http curl封装",
-    "version": "1.0.240517",
     "type": "library",
     "license": "MIT",
     "autoload": {
@@ -15,8 +14,8 @@
             "email": "2018240448@qq.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "php":"^8.0"
-    }
+    },
+    "version": "1.0.517"
 }
