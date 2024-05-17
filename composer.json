@@ -1,7 +1,7 @@
 {
     "name": "zishu/myextend",
-    "description": "我的扩展",
-    "version": "1.0.240516",
+    "description": "我的扩展http curl封装",
+    "version": "1.0.240517",
     "type": "library",
     "license": "MIT",
     "autoload": {
