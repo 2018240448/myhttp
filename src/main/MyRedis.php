@@ -378,6 +378,7 @@ class MyRedis{
         }
         return $result;
     }
+
     /**
      * 查看Set存在个数 = sscan
      * 检索 匹配
@@ -396,6 +397,7 @@ class MyRedis{
         }
         return $result;
     }
+
     /**
      * 添加Set元素 = sadd
      * @access public
@@ -452,6 +454,7 @@ class MyRedis{
         $result = $redis->spop($name);
         return $result;
     }
+
     /*********************************Hase*********************************/
     /**
      * 添加Hase值
