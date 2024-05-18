@@ -5,6 +5,7 @@ namespace Zishu\Myextend\main;
 **/
 
 class MyRedis{
+
     /**
      *类对象实例数组
      *共有静态变量
