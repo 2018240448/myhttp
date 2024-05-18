@@ -16,8 +16,7 @@
         }
     ],
     "require": {
-        "php":"^8.0",
-        "zishu/myextend": "1.0.518"
+        "php":"^8.0"
     },
-    "version": "1.0.518"
+    "version": "1.0.5181"
 }
