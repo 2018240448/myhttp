@@ -3,6 +3,7 @@
     "description": "我的扩展http curl封装",
     "type": "library",
     "license": "MIT",
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "Zishu\\Myextend\\": "src/"
@@ -17,6 +18,5 @@
     "require": {
         "php":"^8.0"
     },
-    "version": "1.0.517",
-    "minimum-stability": "dev"
+    "version": "1.0.517"
 }
