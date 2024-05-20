@@ -1,10 +1,11 @@
 <?php
-namespace Zishu\Myextend\main;
+namespace Zishu\Myextend\main\reids;
 /**
+ * 基于ThinkPHP6 以上的 redis缓存封装
  * PHP Redis类封装
 **/
 
-class MyRedis{
+class TpRedis{
 
     /**
      *类对象实例数组
@@ -289,7 +290,11 @@ class MyRedis{
 
     /*********************************List链数据*********************************/
     /**
+     *  Lrange 返回列表中指定区间内的元素
      * 查看list = lrange
+     * 区间以偏移量 START 和 END 指定   -1 表示列表的最后一个元素， -2 表示列表的倒数第二个元素
+     * @param int $start 开始的元素
+     * @param int $end 结束的元素
      * @access public
      */
     public function lview($name, $start = 0, $end = -1)
@@ -303,7 +308,7 @@ class MyRedis{
     }
 
     /**
-     * 加入list = lpush
+     * 加入list = lpush * Lpush 命令将一个或多个值插入到列表头部
      * @access public
      * @param string $name 缓存变量名
      * @param mixed $value 存储数据
@@ -332,6 +337,7 @@ class MyRedis{
     }
 
     /**
+     *  Llen 命令用于返回列表的长度
      * 获取长度
      * name 键名
      */
@@ -343,6 +349,7 @@ class MyRedis{
     }
     /*********************************Set无序集合*********************************/
     /**
+     * Redis Smembers 命令返回集合中的所有的成员
      * 查看Set = smembers
      * @access public
      */
@@ -399,6 +406,7 @@ class MyRedis{
     }
 
     /**
+     *  Sadd 命令将一个或多个成员元素加入到集合中，已经存在于集合的成员元素将被忽略。即存在相同的值则不加入（不充分）
      * 添加Set元素 = sadd
      * @access public
      * @param string $name 缓存变量名
@@ -429,6 +437,7 @@ class MyRedis{
     }
 
     /**
+     *  Srandmember 命令用于返回集合中的一个随机元素。
      * 随机取Set元素 = srandmember
      * @access public
      * @param string $name 缓存变量名
@@ -486,6 +495,7 @@ class MyRedis{
     }
 
     /**
+     * Hdel 命令用于删除哈希表 key 中的一个或多个指定字段，不存在的字段将被忽略。
      * 删除Hase值
      * @access public
      * @param string $name 缓存变量名
@@ -564,6 +574,7 @@ class MyRedis{
     }
     /*********************************坐标相关*********************************/
     /**
+     * 用于存储指定的地理空间位置，可以将一个或多个经度(longitude)、纬度(latitude)、位置名称(member)添加到指定的 key 中。
      * 坐标添加
      * @param $name
      * @param $lng
@@ -578,10 +589,18 @@ class MyRedis{
     }
 
     /**
+    /**
+     * 以给定的经纬度为中心， 返回键包含的位置元素当中， 与中心的距离不超过给定最大距离的所有位置元素。
      * 坐标范围检索
-     * @param $name
+     * @param $key
      * @param $lng
      * @param $lat
+     * @param $radius 半径或周围
+     * @param string $unit 单位
+     *  WITHDIST: 在返回位置元素的同时， 将位置元素与中心之间的距离也一并返回。
+     *  WITHCOORD: 将位置元素的经度和纬度也一并返回。
+     * ASC: 查找结果根据距离从近到远排序。
+     * DESC: 查找结果根据从远到近排序。
      * @return mixed
      */
     public function gradius($lng,$lat,$radius,$unit='km')

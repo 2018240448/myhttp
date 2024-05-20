@@ -2,5 +2,5 @@
 个人PHP扩展  
 ① http curl请求封装,类名称 MyHttp;  
 ② 请求参数加密解密封装,类名称 MyParams;  
-③ redis常用函数封装,类名称 MyRedis;  
+③ redis常用函数封装,redis;  
 
