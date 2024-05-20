@@ -1,5 +1,5 @@
 <?php
-namespace Zishu\Myextend\main\reids;
+namespace Zishu\Myextend\main\redis;
 /**
  * 基于ThinkPHP6 以上的 redis缓存封装
  * PHP Redis类封装
