@@ -1,21 +1,21 @@
 {
-    "name": "zishu/myextend",
-    "description": "我的扩展http curl封装",
-    "type": "library",
-    "license": "MIT",
-    "minimum-stability": "dev",
-    "autoload": {
-        "psr-4": {
-            "Zishu\\Myextend\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "zishu",
-            "email": "2018240448@qq.com"
-        }
-    ],
-    "require": {
-        "php":"^8.0"
+  "name": "zishu/myextend",
+  "description": "我的扩展http curl封装",
+  "type": "library",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Zishu\\Myextend\\": "src/"
     }
+  },
+  "authors": [
+    {
+      "name": "zishu",
+      "email": "2018240448@qq.com"
+    }
+  ],
+  "require": {
+    "php": "^8.0"
+  }
 }
