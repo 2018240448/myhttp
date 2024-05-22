@@ -3,7 +3,6 @@
     "description": "我的扩展http curl封装",
     "type": "library",
     "license": "MIT",
-    "version": "v1.0.5221",
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
