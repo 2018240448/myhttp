@@ -19,11 +19,7 @@ class MyLog{
      */
     public function __construct($type='admin')
     {
-        define("DS",DIRECTORY_SEPARATOR); //定义常量路径
-//        define("ROOT",getcwd().DS); //当前工作目录
-//        define("ROOT", app()->getRootPath()); //ThinkPHP 获取当前运行脚本所在的文档根目录
-        define("ROOT",$_SERVER['DOCUMENT_ROOT'].DS); //获取当前运行脚本所在的文档根目录 (入口文件下的目录)
-        $this->baseDir = ROOT."use_log/".$type; //基本路径
+        $this->baseDir = $_SERVER['DOCUMENT_ROOT']."/use_log/".$type; //基本路径
         $this->subDir = date("Ym");  //子目录 年月份为名
         $this->fileName = date("Ymd") . ".txt"; //文件名称及后缀 年月份天为名
     }
