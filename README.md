@@ -5,7 +5,7 @@
 #####③ redis常用函数封装,redis;  
 #####④ 日志记录类;
 
-`php:=>8.0`
+` php:>=8.0 `
 
  ` composer require zishu/myextend:^1.0 `
 
