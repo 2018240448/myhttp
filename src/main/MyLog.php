@@ -92,7 +92,7 @@ public function get_log($time){
      * 删除日志
      * @param $time 为文件名
      */
-public function del_log($time){
+  public function del_log($time){
 
         $sub = date('Ym',$time);
         $name = date('Ymd',$time).".txt";
