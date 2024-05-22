@@ -7,7 +7,7 @@
 
 ` php:>=8.0 `
 
- ` composer require zishu/myextend:^1.0 `
+ ` composer require zishu/myextend `
 
 ## 使用  
 ###1. MyHttp类使用(http请求类)
