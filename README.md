@@ -5,9 +5,10 @@
 #####③ redis常用函数封装,redis;  
 #####④ 日志记录类;
 
-` php:>=8.0 `
+` php:>=8.0 `  
 
- ` composer require zishu/myextend `
+ ` composer require zishu/myextend `  
+
 
 ## 使用  
 ###1. MyHttp类使用(http请求类)
