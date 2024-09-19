@@ -27,10 +27,10 @@ class MyLog
 
     /**
      * 记录日志 日志内容
-     * @param $user_id 用户id
+     * @param $user_id 用户id  默认 0 则是游客访问时记录
      * 可记录
      */
-    public function log($user_id)
+    public function log($user_id=0)
     {
         //记录数据组成
         $content = [
