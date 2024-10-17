@@ -25,6 +25,10 @@ class PhpRedis{
     */
     public function set($key, $value)
     {
+        //如果是数组则转换为字符串存储，获取时再转换回原来的格式
+        if(is_array($value)){
+            $value = json_encode($value);
+        }
         return $this->redis->set($key, $value);
     }
 
@@ -232,8 +236,7 @@ class PhpRedis{
      */
     public function spop($key)
     {
-        $redis = $this->is_master();
-        $result = $redis->spop($key);
+        $result = $this->redis->spop($key);
         return $result;
     }
 
